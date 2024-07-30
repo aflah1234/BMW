@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section>
+        <div class="bmw"><img src="image/aa.png" width="500"></div>
+        
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="images/logo.png" alt=""></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+                <img src="image/ab.png"width="150">
+            </ul>
+        </header>
+         <div class="content">
+            <div class="textBox">
+                <h2>FIND YOUR CAR. <br>it's <span>BMW</span></h2>
+                <p>BMW, or Bayerische Motoren Werke AG, is a German multinational company that produces luxury vehicles and motorcycles. Founded in 1916, BMW is known for its performance, innovation, and engineering excellence. The company's headquarters are in Munich, Germany, and it is part of the "German Big Three" luxury automakers, along with Audi and Mercedes-Benz.
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="image/ac.png" class="starbucks" alt="">
+             </div>
+         </div>
+         <ul class="thumb">
+            <li><img src="image/ad.png" alt="" onclick="imgSlider('image/ad.png'); changeCircleColor('#CACAC3')"></li>
+            <li><img src="image/ac.png" alt="" onclick="imgSlider('image/ac.png'); changeCircleColor('#767978')"></li>
+            <li><img src="image/ae.png" alt="" onclick="imgSlider('image/ae.png'); changeCircleColor('#0E7CB6')"></li>
+            <li><img src="image/af.png" alt="" onclick="imgSlider('image/af.png'); changeCircleColor('#B6A90E')"></li>
+        </ul>
+         <ul class="social">
+            <li><a href="#"><img src="" alt=""></a></li>
+            <li><a href="#"><img src="" alt=""></a></li>
+            <li><a href="#"><img src="" alt=""></a></li>
+         </ul>
+    </section>
+
+
+    <script>
+        function imgSlider(change){
+            document.querySelector('.starbucks').src = change;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
